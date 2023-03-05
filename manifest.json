@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "WOL Widescreen",
+  "short_name": "WOL Widescreen",
+  "description": "Toggle the width of wol.jw.org with a click",
+  "version": "0.1.0",
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://wol.jw.org/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
